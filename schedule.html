@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="software,cv,github,projects" />
+    <meta name="keywords" content="software,cv,github,index" />
     <meta
       name="description"
-      content="page with my projects"
+      content="cv site with my projects"
     />
-    <title>egorsufiyarov| projects</title>
+    <title>egorsufiyarov| index</title>
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/schedule.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
     <script src="js/pageLoadTime.js"></script>
+    <script src="js/schedule.js"></script>
   </head>
 
   <body>
@@ -31,30 +32,30 @@
     </header>
 
     <main class="main">
-        <h1 class="main__title">Проекты</h1>
-      <aside class="main__aside">
-        Мой гитхаб с пет-проектами
-        <a 
-        class="main__aside-item main__aside-link" 
-        href="https://github.com/krbyhome">
-        Github</a
-        >
-      </aside>
+        <h1>Добавить встречку</h1>
+        <form class="main__event" id="eventForm">
+            <label class="main__event-label" for="day-select">День недели:</label>
+            <select class="main__form-option" id="form-day-select" name="form-day-select" required>
+                <option value="Понедельник">Понедельник</option>
+                <option value="Вторник">Вторник</option>
+                <option value="Среда">Среда</option>
+                <option value="Четверг">Четверг</option>
+                <option value="Пятница">Пятница</option>
+            </select>
 
-      <section class="main__section">
-        <h3 class="main__section-title">Кратко:</h3>
-        <ol class="main__section-projects">
-          <div class="main__section-projects-item">
-            Мессенджер (C#, Postgres, Kafka)
-          </div>
-          <div class="main__section-projects-item">
-            Библиотека для трейсинга (С++)
-          </div>
-          <div class="main__section-projects-item">
-            Модель банка (C#)
-          </div>
-        </ol>
-      </section>
+            <label class="main__event-label" for="event">Название встречи:</label>
+            <input class="main__event-input" type="text" id="event-input" name="event-input" required>
+
+            <button class="main__event-button" type="submit">Добавить</button>
+        </form>
+
+        <div class="main__schedule-container">
+            <div class="main__field main__day">Понедельник</div>
+            <div class="main__field main__day">Вторник</div>
+            <div class="main__field main__day">Среда</div>
+            <div class="main__field main__day">Четверг</div>
+            <div class="main__field main__day">Пятница</div>
+        </div>
     </main>
 
     <footer class="footer">
