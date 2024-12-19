@@ -1,0 +1,16 @@
+.main__about-pic {
+    width: 400px;
+}
+.main__about-pic-shadow {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+.main__about {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+    margin: 20px 0;
+}

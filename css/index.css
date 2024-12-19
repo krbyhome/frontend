@@ -1,0 +1,8 @@
+.main__section-code {
+    background-color: #e0f7fa;
+    color: #00796b;
+  }
+.main__section-code code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
