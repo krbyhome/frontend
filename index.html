@@ -8,72 +8,85 @@
       content="cv site with my projects"
     />
     <title>egorsufiyarov| index</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <nav class="navigation__logo">
-        <a href="index.html">EGOR</a>
-      </nav>
+    <header class="header">
+      <nav class="header_navigation">
+        <a 
+        class="header__navigation-logo header__navigation-item"
+        href="index.html"
+        >EGOR</a>
 
-      <nav class="navigation__main">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="technologies.html">stack</a>
-        <a href="hobbies.html">hobbies</a>
+        <a class="header__navigation-about header__navigation-item" href="about.html">about</a>
+        <a class="header__navigation-projects header__navigation-item" href="projects.html">projects</a>
+        <a class="header__navigation-technologies header__navigation-item" href="technologies.html">stack</a>
+        <a class="header__navigation-hobbies header__navigation-item" href="hobbies.html">hobbies</a>
       </nav>
     </header>
 
-    <main>
-      <h1>Егор Суфияров</h1>
-      <h2>Разноработчик</h2>
-      <h3>Укладка джсонов, отделка легаси, косметический ремонт кнопок</h3>
-
-      <section class="section__ascii">
-        <pre>
-          ░▄▀▄▀▀▀▀▄▀▄░░░░░░░░░
-          ░█░░░░░░░░▀▄░░░░░░▄░
-          █░░▀░░▀░░░░░▀▄▄░░█░█
-          █░▄░█▀░▄░░░░░░░▀▀░░█
-          █░░▀▀▀▀░░░░░░░░░░░░█
-          █░░░░░░░░░░░░░░░░░░█
-          █░░░░░░░░░░░░░░░░░░█
-          ░█░░▄▄░░▄▄▄▄░░▄▄░░█░
-          ░█░▄▀█░▄▀░░█░▄▀█░▄▀░
-          ░░▀░░░▀░░░░░▀░░░▀░░░
-        </pre>
+    <main class="main">
+      <div class="main__geninfo">
+        <h1 class="main__geninfo-item">Егор Суфияров</h1>
+        <h2 class="main__geninfo-item">Разноработчик</h2>
+        <h3 class="main__geninfo-item">Укладка джсонов, отделка легаси, косметический ремонт кнопок</h3>
+      </div>
+      <section class="main__section">
+        <div class="main__section-ascii">
+          <pre>
+            ░▄▀▄▀▀▀▀▄▀▄░░░░░░░░░
+            ░█░░░░░░░░▀▄░░░░░░▄░
+            █░░▀░░▀░░░░░▀▄▄░░█░█
+            █░▄░█▀░▄░░░░░░░▀▀░░█
+            █░░▀▀▀▀░░░░░░░░░░░░█
+            █░░░░░░░░░░░░░░░░░░█
+            █░░░░░░░░░░░░░░░░░░█
+            ░█░░▄▄░░▄▄▄▄░░▄▄░░█░
+            ░█░▄▀█░▄▀░░█░▄▀█░▄▀░
+            ░░▀░░░▀░░░░░▀░░░▀░░░
+          </pre>
+        </div>
       </section>
 
-      <section class="section__code">
-        <pre>
-            <code>
-                def Hello():
-                  print("Hi there!")
-            </code>
-        </pre>
+      <section class="main__section">
+        <div class="main__section-item main__section-code">
+          <pre>
+              <code>
+                  def Hello():
+                    print("Hi there!")
+              </code>
+          </pre>
+        </div>
       </section>
 
-      <section class="section__content">
-        <p>
-          Старательный разноработчик из Кемерово
-          приехал держать с мужиками 1кк+ рпс
-          в хайлоаде, инструменты:
-          <b>C++</b>, <b>C#</b>, <b>Python</b>, <b>Postgres</b>, <b>Kafka</b>.
-        </p>
+      <section class="main__section">
+        <div class="main__section-content">
+          <p>
+            Старательный разноработчик из Кемерово
+            приехал держать с мужиками 1кк+ рпс
+            в хайлоаде, инструменты:
+            <b>C++</b>, <b>C#</b>, <b>Python</b>, <b>Postgres</b>, <b>Kafka</b>.
+          </p>
+        </div>
       </section>
 
-      <section class="section_quote">
+      <section class="main__section">
+        <div class="main__section-quote">
         <q>
             Панда
         </q>
         - <cite>Угувей</cite>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <nav class="navigation__contacts">
-        <a href="https://t.me/sufiyarovegor">telegram</a>
-        <a href="https://github.com/krbyhome">github</a>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a class="footer__navigation-telegram footer__navigation-item" href="https://t.me/sufiyarovegor">telegram</a>
+        <a class="footer__navigation-github footer__navigation-item" href="https://github.com/krbyhome">github</a>
       </nav>
     </footer>
   </body>

@@ -5,37 +5,41 @@
     <meta name="keywords" content="github,portfolio,frontend,hobbies" />
     <meta name="description" content="page with my hobbies" />
     <title>egorsufiyarov| stack</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/hobbies.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-        <nav class="navigation__logo">
-          <a href="index.html">EGOR</a>
-        </nav>
-  
-        <nav class="navigation__main">
-          <a href="about.html">about</a>
-          <a href="projects.html">projects</a>
-          <a href="technologies.html">stack</a>
-          <a href="hobbies.html">hobbies</a>
+    <header class="header">
+        <nav class="header_navigation">
+          <a 
+          class="header__navigation-logo header__navigation-item"
+          href="index.html"
+          >EGOR</a>
+
+          <a class="header__navigation-about header__navigation-item" href="about.html">about</a>
+          <a class="header__navigation-projects header__navigation-item" href="projects.html">projects</a>
+          <a class="header__navigation-technologies header__navigation-item" href="technologies.html">stack</a>
+          <a class="header__navigation-hobbies header__navigation-item" href="hobbies.html">hobbies</a>
         </nav>
     </header>
 
-    <main>
-      <section class="hobbies">
-        <h1>Мне нравится</h1>
-        <ul>
-            <li><strong>Скалолазание:</strong> Занятие на открытом воздухе, где я испытываю себя, чтобы достичь новых высот.</li>
-            <li><strong>Кушать:</strong>  Люблю исследовать различные кухни и пробовать новые блюда</li>
-            <li><strong>Шахматы:</strong> Игра, которая развивает мой ум и навыки.</li>
+    <main class="main">
+      <section class="main__section">
+        <h1 class="main__section-title">Мне нравится</h1>
+        <ul class="main__section-hobbies">
+            <li class="main__section-hobbies-item"><strong>Скалолазание:</strong> Занятие на открытом воздухе, где я испытываю себя, чтобы достичь новых высот.</li>
+            <li class="main__section-hobbies-item"><strong>Кушать:</strong>  Люблю исследовать различные кухни и пробовать новые блюда</li>
+            <li class="main__section-hobbies-item"><strong>Шахматы:</strong> Игра, которая развивает мой ум и навыки.</li>
         </ul>
       </section>
     </main>
 
-    <footer>
-        <nav class="navigation__contacts">
-          <a href="https://t.me/sufiyarovegor">telegram</a>
-          <a href="https://github.com/krbyhome">github</a>
+    <footer class="footer">
+        <nav class="footer__navigation">
+          <a class="footer__navigation-telegram footer__navigation-item" href="https://t.me/sufiyarovegor">telegram</a>
+          <a class="footer__navigation-github footer__navigation-item" href="https://github.com/krbyhome">github</a>
         </nav>
       </footer>
   </body>

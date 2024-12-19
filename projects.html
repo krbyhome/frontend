@@ -8,49 +8,57 @@
       content="page with my projects"
     />
     <title>egorsufiyarov| projects</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <nav class="navigation__logo">
-        <a href="index.html">EGOR</a>
-      </nav>
+    <header class="header">
+      <nav class="header_navigation">
+        <a 
+        class="header__navigation-logo header__navigation-item"
+        href="index.html"
+        >EGOR</a>
 
-      <nav class="navigation__main">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="technologies.html">stack</a>
-        <a href="hobbies.html">hobbies</a>
+        <a class="header__navigation-about header__navigation-item" href="about.html">about</a>
+        <a class="header__navigation-projects header__navigation-item" href="projects.html">projects</a>
+        <a class="header__navigation-technologies header__navigation-item" href="technologies.html">stack</a>
+        <a class="header__navigation-hobbies header__navigation-item" href="hobbies.html">hobbies</a>
       </nav>
     </header>
 
-    <main>
-        <h1>Проекты</h1>
-      <aside>
+    <main class="main">
+        <h1 class="main__title">Проекты</h1>
+      <aside class="main__aside">
         Мой гитхаб с пет-проектами
-        <a href="https://github.com/krbyhome">Github</a>
+        <a 
+        class="main__aside-item main__aside-link" 
+        href="https://github.com/krbyhome">
+        Github</a
+        >
       </aside>
 
-      <section class="projects">
-        <h3>Кратко:</h3>
-        <ol>
-          <li>
+      <section class="main__section">
+        <h3 class="main__section-title">Кратко:</h3>
+        <ol class="main__section-projects">
+          <li class="main__section-projects-item">
             Мессенджер (C#, Postgres, Kafka)
           </li>
-          <li>
+          <li class="main__section-projects-item">
             Библиотека для трейсинга (С++)
           </li>
-          <li>
+          <li class="main__section-projects-item">
             Модель банка (C#)
           </li>
         </ol>
       </section>
     </main>
 
-    <footer>
-      <nav class="navigation__contacts">
-        <a href="https://t.me/sufiyarovegor">telegram</a>
-        <a href="https://github.com/krbyhome">github</a>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a class="footer__navigation-telegram footer__navigation-item" href="https://t.me/sufiyarovegor">telegram</a>
+        <a class="footer__navigation-github footer__navigation-item" href="https://github.com/krbyhome">github</a>
       </nav>
     </footer>
   </body>

@@ -5,27 +5,40 @@
     <meta name="keywords" content="software,cv,github,about" />
     <meta name="description" content="page about me"/>
     <title>egorsufiyarov| about</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <nav class="navigation__logo">
-        <a href="index.html">EGOR</a>
-      </nav>
+    <header class="header">
+      <nav class="header__navigation">
+        <a 
+        class="header__navigation-logo header__navigation-item"
+        href="index.html"
+        >EGOR</a>
 
-      <nav class="navigation__main">
-        <a href="about.html">about</a>
-        <a href="projects.html">projects</a>
-        <a href="technologies.html">stack</a>
-        <a href="hobbies.html">hobbies</a>
+        <a class="header__navigation-about header__navigation-item" href="about.html">about</a>
+        <a class="header__navigation-projects header__navigation-item" href="projects.html">projects</a>
+        <a class="header__navigation-technologies header__navigation-item" href="technologies.html">stack</a>
+        <a class="header__navigation-hobbies header__navigation-item" href="hobbies.html">hobbies</a>
       </nav>
     </header>
 
-    <main>
-        <h1>Про меня</h1>
-        <article class="about">
-          <h2>Егорчик</h2>
-          <p class="intro">
+    <main class="main">
+        <h1 class="main__title">Про меня</h1>
+
+        <article class="main__about">
+          <h2 class="main__about-title">Егорчик</h2>
+
+          <div class="main__about-item main__about-pic-item">
+            <img
+              class="main__about-pic main__about-pic-shadow"
+              src="pics/my_photo.jpg"
+            />
+          </div>
+
+          <p class="main__about-intro">
             Родился в городе <i>Кемерово</i>
             <br />
             Сейчас в Санкт-Петербурге
@@ -33,18 +46,18 @@
             В прошлом разрабатывал <strong>корпоративный мессенджер</strong>
           </p>
   
-          <h2>Опыт</h2>
-          <p class="experience">
-            <li>
+          <h2 class="main__about-title">Опыт</h2>
+          <p class="main__about-experience">
+            <li class="main__about-experience-item">
                 Мессенджер, стажер (июнь 2024 - октябрь 2024)
             </li>
-            <li>
+            <li class="main__about-experience-item">
                 Яндекс.Поиск, разработчик (ноябрь 2024 - н.в.)
             </li>
           </p>
   
-          <h2>Сфера увлечений</h2>
-          <p class="aims">
+          <h2 class="main__about-title">Сфера увлечений</h2>
+          <p class="main__about-aims">
             Мне нравится разрабатывать микросервисы
             <br />
             Участвовать в разработке высоконагруженных приложений
@@ -54,10 +67,10 @@
         </article>
     </main>
 
-    <footer>
-      <nav class="navigation__contacts">
-        <a href="https://t.me/sufiyarovegor">telegram</a>
-        <a href="https://github.com/krbyhome">github</a>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <a class="footer__navigation-telegram footer__navigation-item" href="https://t.me/sufiyarovegor">telegram</a>
+        <a class="footer__navigation-github footer__navigation-item" href="https://github.com/krbyhome">github</a>
       </nav>
     </footer>
   </body>
