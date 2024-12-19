@@ -4,12 +4,20 @@ a {
 }
 
 html, body {
-    margin: 0 1%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
     padding: 0;
 }
 
+
 html {
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    overflow-y: auto;
 }
 
 .header {
