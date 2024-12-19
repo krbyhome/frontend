@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <script src="js/pageLoadTime.js"></script>
   </head>
 
   <body>
     <header class="header">
       <nav class="header__navigation">
         <a 
-        class="header__navigation-logo header__navigation-item"
+        class="header__navigation-logo header__navigation-item header__item-onmouseover"
         href="index.html"
         >EGOR</a>
 
-        <a class="header__navigation-about header__navigation-item" href="about.html">about</a>
-        <a class="header__navigation-projects header__navigation-item" href="projects.html">projects</a>
-        <a class="header__navigation-technologies header__navigation-item" href="technologies.html">stack</a>
-        <a class="header__navigation-hobbies header__navigation-item" href="hobbies.html">hobbies</a>
+        <a class="header__navigation-about header__navigation-item header__item-onmouseover" href="about.html">about</a>
+        <a class="header__navigation-projects header__navigation-item header__item-onmouseover" href="projects.html">projects</a>
+        <a class="header__navigation-technologies header__navigation-item header__item-onmouseover" href="technologies.html">stack</a>
+        <a class="header__navigation-hobbies header__navigation-item header__item-onmouseover" href="hobbies.html">hobbies</a>
       </nav>
     </header>
 
@@ -83,9 +84,11 @@
 
     <footer class="footer">
       <nav class="footer__navigation">
-        <a class="footer__navigation-telegram footer__navigation-item" href="https://t.me/sufiyarovegor">telegram</a>
-        <a class="footer__navigation-github footer__navigation-item" href="https://github.com/krbyhome">github</a>
+        <a class="footer__navigation-telegram footer__navigation-item footer__item-onmouseover" href="https://t.me/sufiyarovegor">telegram</a>
+        <a class="footer__navigation-github footer__navigation-item footer__item-onmouseover" href="https://github.com/krbyhome">github</a>
       </nav>
+
+      <div class="footer__time" id="page-load-time"></div>
     </footer>
   </body>
 </html>
