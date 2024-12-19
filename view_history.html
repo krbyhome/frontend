@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="keywords" content="software,cv,github,projects" />
+    <meta name="keywords" content="software,cv,github,index" />
     <meta
       name="description"
-      content="page with my projects"
+      content="cv site with my projects"
     />
-    <title>egorsufiyarov| projects</title>
+    <title>egorsufiyarov| index</title>
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/users.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
     <script src="js/pageLoadTime.js"></script>
+    <script src="js/handlePost.js"></script>
   </head>
 
   <body>
@@ -32,30 +33,12 @@
     </header>
 
     <main class="main">
-        <h1 class="main__title">Проекты</h1>
-      <aside class="main__aside">
-        Мой гитхаб с пет-проектами
-        <a 
-        class="main__aside-item main__aside-link" 
-        href="https://github.com/krbyhome">
-        Github</a
-        >
-      </aside>
+        <h1 id="main__title">Список пользователей</h1>
 
-      <section class="main__section">
-        <h3 class="main__section-title">Кратко:</h3>
-        <ol class="main__section-projects">
-          <div class="main__section-projects-item">
-            Мессенджер (C#, Postgres, Kafka)
-          </div>
-          <div class="main__section-projects-item">
-            Библиотека для трейсинга (С++)
-          </div>
-          <div class="main__section-projects-item">
-            Модель банка (C#)
-          </div>
-        </ol>
-      </section>
+        <div class="main__container">
+            <div id="preloader" class="main__container-preloader">Загрузка...</div>
+            <div id="user-list" class="main__container-userlist"></div>
+        </div>    
     </main>
 
     <footer class="footer">
