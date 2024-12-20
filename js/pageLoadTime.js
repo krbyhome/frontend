@@ -17,7 +17,7 @@ const decorateCurrentPage = () => {
   window.onload = () => {
     const endTime = performance.now();
     const loadTime = (endTime - startTime);
-    const loadTimeInSeconds = (loadTime / 1000).toFixed(2)
+    const loadTimeInSeconds = (loadTime / 1000).toFixed(3)
     const element = document.getElementById("page-load-time");
     const text = document.createTextNode(`Load time: ${loadTimeInSeconds}`);
     element.appendChild(text);
